@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidates List</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+        }
+        /* Sidebar Styling */
+        
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background-color: #1e2d3b;
+            color: #fff;
+            position: fixed;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar h2 {
+            font-size: 22px;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+        
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+        
+        .sidebar ul li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .sidebar ul li a:hover {
+            background-color: #34495e;
+        }
+        /* Header Styling */
+        
+        .header {
+            margin-left: 250px;
+            background-color: #2e3b4e;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header h1 {
+            font-size: 24px;
+        }
+        
+        .header div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .header img {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border: 2px solid #fff;
+        }
+        /* Main Content Styling */
+        
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        
+        .candidate-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .candidate-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .candidate-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .candidate-card h3 {
+            margin: 10px 0 5px;
+            color: #2e3b4e;
+        }
+        
+        .candidate-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Voting System</h2>
+        <ul>
+            <li><a href="../dashboard.html">Dashboard</a></li>
+            <li><a href="../adminlogin/candidates.html">Add Candidates</a></li>
+            <li><a href="#">Manage Voters</a></li>
+            <li><a href="../voterlogin/voter.html">Do Voter</a></li>
+            <li><a href="#">Manage Positions</a></li>
+            <li><a href="#">Votes Overview</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <h1>Candidates List</h1>
+        <div>
+            <span>Prince Arya</span>
+            <img src="../../image/img.png" alt="Profile">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="candidate-list" id="candidateList">
+            <div class="candidate-card">
+                <img src="https://via.placeholder.com/100" alt="Candidate Photo">
+                <h3>John Doe</h3>
+                <p>Email: johndoe@example.com</p>
+                <p>Bio: Experienced leader with a passion for community development.</p>
+            </div>
+            <div class="candidate-card">
+                <img src="../../image/cand4.png" alt="Candidate Photo">
+                <h3>Jane Smith</h3>
+                <p>Email: janesmith@example.com</p>
+                <p>Bio: Advocate for education reforms and social justice.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
